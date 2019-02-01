@@ -152,33 +152,33 @@ namespace FirstExam
        * ON t.Code = ct.TravelCode
        */
 
-      //var q2 =
-      //  CustomerTable.Join(
-      //    CustomerTravelTable,
-      //    (c, ct) => c.Id == ct.CustomerId
-      //    )
-      //  .Join(
-      //    //TODO 4a: complete the implementation of query 2
-      //    )
-      //  .Map(t => /* //TODO 4a: complete the implementation of query 2 */);
+      var q2 =
+        CustomerTable.Join(
+          CustomerTravelTable,
+          (c, ct) => c.Id == ct.CustomerId
+          )
+        .Join(
+          //TODO 4a: complete the implementation of query 2
+          )
+        .Map(t => /* //TODO 4a: complete the implementation of query 2 */);
 
-      ///*
-      // * SELECT c.FirstName, c.LastName, t.Destination
-      // * FROM Customer c INNER JOIN CustomerTravel ct
-      // * ON c.Id = ct.CustomerId INNER JOIN Travel t
-      // * ON t.Code = ct.TravelCode
-      // * WHERE t.Date > '2019-02-01'
-      // */
+      /*
+       * SELECT c.FirstName, c.LastName, t.Destination
+       * FROM Customer c INNER JOIN CustomerTravel ct
+       * ON c.Id = ct.CustomerId INNER JOIN Travel t
+       * ON t.Code = ct.TravelCode
+       * WHERE t.Date > '2019-02-01'
+       */
 
-      //var q3 =
-      //  CustomerTable.Join(
-      //    CustomerTravelTable,
-      //    (c, ct) => c.Id == ct.CustomerId
-      //    )
-      //  .Join(
-      //    //TODO 5a: complete the implementation of query 3
-      //    )
-      //  .Map(t => /* TODO 5b: complete the implementation of query 3 */);
+      var q3 =
+        CustomerTable.Join(
+          CustomerTravelTable,
+          (c, ct) => c.Id == ct.CustomerId
+          )
+        .Join(
+          //TODO 5a: complete the implementation of query 3
+          )
+        .Map(t => /* TODO 5b: complete the implementation of query 3 */);
 
     }
   }
